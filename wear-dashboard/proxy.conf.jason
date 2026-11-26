@@ -1,0 +1,8 @@
+{
+  "/api-esp32": {
+    "target": "http://10.152.178.178",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {"^/api-esp32": ""}
+  }
+}

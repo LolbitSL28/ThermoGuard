@@ -1,0 +1,73 @@
+/* Contenedor principal */
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Tarjetas estilo Dark */
+.card-custom {
+  background-color: #0f0f13; /* Fondo casi negro */
+  border: 1px solid #2a2a35;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  border-color: #7c3aed; /* Borde morado al pasar el mouse */
+}
+
+/* Subtítulos de las tarjetas (Temperatura, BPM, etc.) */
+.card-custom h5 {
+  font-size: 0.9rem; /* Un poco más pequeños para que no sature */
+  color: #a1a1aa !important; /* Gris claro */
+}
+
+/* Los números grandes */
+.display-3 {
+  font-family: 'Archivo Black', sans-serif;
+  background: -webkit-linear-gradient(45deg, #a855f7, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+
+/* Alertas (Rojo neón) */
+.bg-alerta {
+  background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%) !important;
+  border: 1px solid #ef4444;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+/* Controles de Slider */
+.form-range::-webkit-slider-thumb {
+  background: #a855f7;
+}
+.form-range::-webkit-slider-runnable-track {
+  background: #2a2a35;
+}
+
+/* Botón de silenciar */
+.btn-warning {
+  background-color: #f59e0b;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 12px;
+}
